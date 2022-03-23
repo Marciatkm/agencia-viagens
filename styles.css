@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background-color: orangered;
+}
+
+
+header{
+    height:calc(100vh - 150px );
+    background: no-repeat center/cover url("./img/viagem.jpg");
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+    color: azure;
+}
+header nav p {
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 0 15px ;
+}
+.barra{
+    color: azure;
+    font-weight: bold;
+}
+
+.header-content {
+ max-width: 400px;
+ margin: 150px auto;
+ text-align: center;
+ color: azure;
+}
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+header nav p{
+    width: 100%;
+    text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+
+/* Landscape phones and down */
+@media (max-width: 767px) { 
+    header {
+     background: brown;
+    }               
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 480px) { 
+    body{
+        height: calc( 100vh - 55px );
+        background: greenyellow;
+    }
+    header nav ul {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 0px;
+        margin: 0;
+        color: azure;
+        font-weight: bold;
+
+       background: rgb(65, 42, 165);
+       height: 55px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }      
+}
+
+/* Portrait tablet to landscape and desktop */
+/* @media (min-width: 768px) and (max-width: 979px) { ... } */
+
+/* Large desktop */
+/* @media (min-width: 1200px) { ... } */
